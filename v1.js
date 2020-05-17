@@ -202,18 +202,28 @@ var box=document.getElementById('box');
 
  var itemInput =document.querySelector('input[type="text"]');
  var form =document.querySelector('form');
+ var select =document.querySelector('select');
 
- itemInput.addEventListener('keydown',runEvent);
+
+//  itemInput.addEventListener('keydown',runEvent);
+
+// select.addEventListener('change',runEvent);
+// select.addEventListener('input',runEvent);
+form.addEventListener('submit',runEvent);
 
 function runEvent(e){
-    console.log('EVENT TYPE:'+e.type);
+  e.preventDafault();
+     console.log('EVENT TYPE:'+e.type);
 
-    console.log(e.target.value);
-    document.getElementById('output').innerHTML = '<h3>'+e.target.value+'</h3>';
+  //console.log(e.target.value);
+//     document.getElementById('output').innerHTML = '<h3>'+e.target.value+'</h3>';
 
 
     // output .inner= '<h3>mousex: '+e.offsetx' </h3>    <h3>mousey: '+e.offsety +'</h3>';
  //document.body.style.backgroundColor ="rgb("+e.offsetx+","+e.offsety+",40)";
 }
+
+
+
 
 

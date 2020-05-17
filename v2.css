@@ -1,0 +1,20 @@
+#main-header{
+    background-color: green;
+}
+#main{
+    background-color:pink;
+}
+
+.list-group{
+    border-style: double;
+}
+
+
+#Items{
+    border-style: groove;
+    background-color: darkslateblue;
+
+}
+.list-group-item{
+    border-style: double;
+}
